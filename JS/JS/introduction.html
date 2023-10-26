@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Javascript</title>
+</head>
+<body>
+    <h1>Salve Javascript!</h1>
+
+    <p>Aqui é um paragrafo inserido via HTML</p>
+    <span class="nome"></span>
+
+    <script>
+        var nome = prompt("Digite seu nome")
+
+        alert("Simboraaaa! " + nome);
+        confirm("Deseja continuar?")
+
+        var spanNome = document.querySelector('.nome');
+        console.log(spanNome);//Exibe a variável spanNome no console
+
+        spanNome.innerHTML = 'Year! chega Helder';
+    </script>
+
+   
+</body>
+</html>

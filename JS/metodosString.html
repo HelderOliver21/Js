@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+</head>
+<body>
+    <script>
+        //declaração de variaveis
+        let saudacao, ios, nome, frase1, gap;
+
+        //Atribuir valor para as variáveis
+        saudacao = 'Ola pessoa ';
+        ios = 'instituto da Oportunidade Social';
+        gap = ' '
+        //Prompt resgata alguma informação do usuário a partir da tela
+        nome = prompt('qual é seu nome infeliz?');
+        frase1 = 'ser ou não ser, cadê o busao'
+
+        //Apresentação das variáveis no documento
+        //Forma  antiga de unir texto
+        document.write(saudacao + gap + nome + '<br>' + gap + frase1) + '<br><br><br>';
+
+
+        //Forma moderna que se chama template String
+        //Interpolação de texto e variáveis usada o indentificador 
+        // -> (${Aqui dentro escrevo Java Script})
+        //É Necessário utilizar um par de crases
+        document.write(`seja ben vinde <br> ${saudacao} ${nome} <br> ${frase1} <br><br><br>`);
+        //É possivel retornar operações
+        let produto = 10;
+        document.write(`${produto*2}`);
+        document.write(`<h1>Métodos de String<h1>`);
+        console.log(frase1.length);// Propriedade length retorna o tamanha da variavel   
+        console.log(saudacao.length);// Propriedade length retorna o tamanha da variavel   
+        console.log(ios.length);// Propriedade length retorna o tamanha da variavel   
+        console.log(nome.length);// Propriedade length retorna o tamanha da variavel 
+        console.log(ios.toLowerCase());//todo o texto contido em ios se tornará minúsculo  
+        console.log(ios.toUpperCase());//todo o texto contido em ios se tornará maiúsculo  
+        console.log(frase1.substring(15));//recortar partes da string
+        console.log(frase1.substring(15, 20 + '?'));//recortar partes da string
+
+        console.log(frase1);
+        console.log(frase1.split(','));
+
+        var frase2 = 'as linguagem de programacao sao utilizada para instruir as maquinas a realizarem tarefas de variados tipos por ex: calculos financeiros, reconhecimentos de padroes, automacao de processos leia mais'
+        console.log(frase2.split('a'));
+       
+        //Replace serve para trocar parte da string
+
+        console.log(frase1.replace('busão', 'pão'));
+        console.log(frase1.replace('ser', 'pero'))
+        //tirando espaços em branco de uma string
+
+        frase1 = 'oi?   tudo bem     com você'
+        console.log(frase1);
+        console.log(frase1.trim());
+
+
+    </script>
+</body>
+</html>
