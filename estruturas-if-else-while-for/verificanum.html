@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica numero</title>
+</head>
+<body>
+    <script>
+        const num = prompt('Digite um numero')
+        let numConvertido = parseInt(num);//converte o numero inteiro
+        function digitacaoVazia(num){
+            if(numConvertido === '') {
+                alert(`O Numero Digitado digitado esta vazio`)
+                numConvertido = 0;
+
+            }
+            return numConvertido
+       
+
+        if(numConvertido == 0){
+            alert(`O Numero Digitado(${num}), esse é Zero!`)
+        }
+        
+        else if(numConvertido > 0) {
+            alert(`O Numero Digitado(${num}), esse é positivo`)
+        
+        }
+        else{
+            alert(`O Numero Digitado(${num}), esse é negativo`)
+        }
+    }
+    digitacaoVazia(numConvertido)
+
+    </script>
+</body>
+</html>

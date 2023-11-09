@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+</head>
+<body>
+    <script>
+        /* const senha = prompt('Digite sua senha'); */
+
+         /* console.log(senha); */
+
+        /*  if(senha.length < 8) {
+            alert('senha muito curta')
+         } */
+        
+         var senha = prompt('Digite sua senha');
+         do {
+            alert('senha menor que 8 caracteres')
+            senha = prompt('Digite novamente a senha')
+         }while (senha.length < 8)
+    </script>
+</body>
+</html>
